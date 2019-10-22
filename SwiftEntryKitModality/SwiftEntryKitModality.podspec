@@ -13,7 +13,7 @@ Pod::Spec.new do |s|
   s.license      = { :type => 'MIT', :file => 'LICENSE' }
   s.author       = { "Dmitriy" => "dzhimasan@gmail.com" }
   s.source       = { :git => "https://github.com/DimaIgorevich/SwiftEntryKitModality.git", :tag => "#{s.version}" }
-  s.source_files = 'Source/**/*'
+  s.source_files = 'SwiftEntryKitModality/**/*'
   s.frameworks = 'UIKit'
   s.dependency 'SwiftEntryKit', '0.8.9'
 
