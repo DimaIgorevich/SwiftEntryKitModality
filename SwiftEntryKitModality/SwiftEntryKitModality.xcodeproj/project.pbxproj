@@ -7,13 +7,27 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		17A3B0AA95F1B0CF0EF0703B /* Pods_SwiftEntryKitModality.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A17ED1C7D5CCCB5C5C93AC2 /* Pods_SwiftEntryKitModality.framework */; };
 		32BCD761235F383900044C88 /* SwiftEntryKitModality.h in Headers */ = {isa = PBXBuildFile; fileRef = 32BCD75F235F383900044C88 /* SwiftEntryKitModality.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		32BCD76A235F3B2E00044C88 /* SwiftEntryKitModality.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32BCD768235F3B2E00044C88 /* SwiftEntryKitModality.swift */; };
+		32BCD76B235F3B2E00044C88 /* SwiftEntryKitAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32BCD769235F3B2E00044C88 /* SwiftEntryKitAttributes.swift */; };
+		32BCD76E235F3FE400044C88 /* Object+ClassName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32BCD76D235F3FE400044C88 /* Object+ClassName.swift */; };
+		32BCD770235F400E00044C88 /* CGRect+Edge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32BCD76F235F400E00044C88 /* CGRect+Edge.swift */; };
+		32BCD772235F401F00044C88 /* UIScreen+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32BCD771235F401F00044C88 /* UIScreen+Utils.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		09548C8AE88582342637EE15 /* Pods-SwiftEntryKitModality.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftEntryKitModality.release.xcconfig"; path = "Target Support Files/Pods-SwiftEntryKitModality/Pods-SwiftEntryKitModality.release.xcconfig"; sourceTree = "<group>"; };
 		32BCD75C235F383900044C88 /* SwiftEntryKitModality.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftEntryKitModality.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		32BCD75F235F383900044C88 /* SwiftEntryKitModality.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SwiftEntryKitModality.h; sourceTree = "<group>"; };
 		32BCD760235F383900044C88 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		32BCD768235F3B2E00044C88 /* SwiftEntryKitModality.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftEntryKitModality.swift; sourceTree = "<group>"; };
+		32BCD769235F3B2E00044C88 /* SwiftEntryKitAttributes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftEntryKitAttributes.swift; sourceTree = "<group>"; };
+		32BCD76D235F3FE400044C88 /* Object+ClassName.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Object+ClassName.swift"; sourceTree = "<group>"; };
+		32BCD76F235F400E00044C88 /* CGRect+Edge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGRect+Edge.swift"; sourceTree = "<group>"; };
+		32BCD771235F401F00044C88 /* UIScreen+Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIScreen+Utils.swift"; sourceTree = "<group>"; };
+		3A17ED1C7D5CCCB5C5C93AC2 /* Pods_SwiftEntryKitModality.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftEntryKitModality.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		977C6184395322B00ED17B10 /* Pods-SwiftEntryKitModality.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftEntryKitModality.debug.xcconfig"; path = "Target Support Files/Pods-SwiftEntryKitModality/Pods-SwiftEntryKitModality.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -21,6 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				17A3B0AA95F1B0CF0EF0703B /* Pods_SwiftEntryKitModality.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -32,6 +47,8 @@
 			children = (
 				32BCD75E235F383900044C88 /* SwiftEntryKitModality */,
 				32BCD75D235F383900044C88 /* Products */,
+				EDCA16AE6A74770EBD47DDEA /* Pods */,
+				D391517EBE7EE306FA864359 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -46,10 +63,48 @@
 		32BCD75E235F383900044C88 /* SwiftEntryKitModality */ = {
 			isa = PBXGroup;
 			children = (
+				32BCD76C235F3FCB00044C88 /* Extensions */,
+				32BCD767235F3B2E00044C88 /* Classes */,
 				32BCD75F235F383900044C88 /* SwiftEntryKitModality.h */,
 				32BCD760235F383900044C88 /* Info.plist */,
 			);
 			path = SwiftEntryKitModality;
+			sourceTree = "<group>";
+		};
+		32BCD767235F3B2E00044C88 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				32BCD768235F3B2E00044C88 /* SwiftEntryKitModality.swift */,
+				32BCD769235F3B2E00044C88 /* SwiftEntryKitAttributes.swift */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		32BCD76C235F3FCB00044C88 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				32BCD76D235F3FE400044C88 /* Object+ClassName.swift */,
+				32BCD76F235F400E00044C88 /* CGRect+Edge.swift */,
+				32BCD771235F401F00044C88 /* UIScreen+Utils.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		D391517EBE7EE306FA864359 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3A17ED1C7D5CCCB5C5C93AC2 /* Pods_SwiftEntryKitModality.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EDCA16AE6A74770EBD47DDEA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				977C6184395322B00ED17B10 /* Pods-SwiftEntryKitModality.debug.xcconfig */,
+				09548C8AE88582342637EE15 /* Pods-SwiftEntryKitModality.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -70,6 +125,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 32BCD764235F383900044C88 /* Build configuration list for PBXNativeTarget "SwiftEntryKitModality" */;
 			buildPhases = (
+				D525DD4353B91C0CB996D7E9 /* [CP] Check Pods Manifest.lock */,
 				32BCD757235F383900044C88 /* Headers */,
 				32BCD758235F383900044C88 /* Sources */,
 				32BCD759235F383900044C88 /* Frameworks */,
@@ -126,11 +182,41 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		D525DD4353B91C0CB996D7E9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SwiftEntryKitModality-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		32BCD758235F383900044C88 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				32BCD772235F401F00044C88 /* UIScreen+Utils.swift in Sources */,
+				32BCD770235F400E00044C88 /* CGRect+Edge.swift in Sources */,
+				32BCD76B235F3B2E00044C88 /* SwiftEntryKitAttributes.swift in Sources */,
+				32BCD76A235F3B2E00044C88 /* SwiftEntryKitModality.swift in Sources */,
+				32BCD76E235F3FE400044C88 /* Object+ClassName.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -259,6 +345,7 @@
 		};
 		32BCD765235F383900044C88 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 977C6184395322B00ED17B10 /* Pods-SwiftEntryKitModality.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -275,13 +362,14 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.quilcode.SwiftEntryKitModality;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
 		32BCD766235F383900044C88 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 09548C8AE88582342637EE15 /* Pods-SwiftEntryKitModality.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -298,7 +386,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.quilcode.SwiftEntryKitModality;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
