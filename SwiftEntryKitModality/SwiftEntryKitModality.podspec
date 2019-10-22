@@ -9,7 +9,7 @@ Pod::Spec.new do |s|
   s.swift_version = '4.2'
   s.requires_arc = true
 
-  s.homepage     = "https://github.com/DimaIgorevich/ReachableObserver"
+  s.homepage     = "https://github.com/DimaIgorevich/SwiftEntryKitModality"
   s.license      = { :type => 'MIT', :file => 'LICENSE' }
   s.author       = { "Dmitriy" => "dzhimasan@gmail.com" }
   s.source       = { :git => "https://github.com/DimaIgorevich/SwiftEntryKitModality.git", :tag => "#{s.version}" }
