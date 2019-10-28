@@ -8,7 +8,7 @@
 
 import SwiftEntryKit
 
-struct SwiftEntryKitAttributes {
+public struct SwiftEntryKitAttributes {
     
     static var popup: EKAttributes {
         var attributes                          = EKAttributes.centerFloat

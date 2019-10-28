@@ -11,7 +11,7 @@ import SwiftEntryKit
 
 // MARK: - SwiftEntryKitModality
 
-class SwiftEntryKitModalityView: UIView, ModalityContentProtocol {
+public class SwiftEntryKitModalityView: UIView, ModalityContentProtocol {
     
     // MARK: - Properties
     
