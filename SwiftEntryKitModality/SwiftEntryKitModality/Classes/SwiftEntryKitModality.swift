@@ -11,7 +11,7 @@ import SwiftEntryKit
 
 // MARK: - SwiftEntryKitModality
 
-public class SwiftEntryKitModalityView: UIView, ModalityContentProtocol {
+open class SwiftEntryKitModalityView: UIView, ModalityContentProtocol {
     
     // MARK: - Properties
     
@@ -24,7 +24,7 @@ public class SwiftEntryKitModalityView: UIView, ModalityContentProtocol {
         self.commonInit()
     }
     
-    required init?(coder aDecoder: NSCoder) {
+    required public init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
         self.commonInit()
     }
