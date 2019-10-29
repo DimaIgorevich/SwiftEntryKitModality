@@ -48,7 +48,7 @@ open class SwiftEntryKitModalityView: UIView, ModalityContentProtocol {
 
 // MARK: - ModalityLifecycleEventProtocol
 
-protocol ModalityLifecycleEventProtocol  {
+public protocol ModalityLifecycleEventProtocol  {
     
     typealias LifecycleHandlerEvent = SwiftEntryKit.DismissCompletionHandler
     
@@ -64,7 +64,7 @@ protocol ModalityLifecycleEventProtocol  {
 
 // MARK: - ModalityProtocol
 
-protocol ModalityProtocol: class {
+public protocol ModalityProtocol: class {
     
     func show(presentInsideKeyWindow: Bool, rollbackWindow: SwiftEntryKit.RollbackWindow)
     
