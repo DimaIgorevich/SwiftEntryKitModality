@@ -10,7 +10,7 @@ import SwiftEntryKit
 
 public struct SwiftEntryKitAttributes {
     
-    static var popup: EKAttributes {
+    public static var popup: EKAttributes {
         var attributes                          = EKAttributes.centerFloat
         attributes.displayDuration              = .infinity
         attributes.screenInteraction            = .absorbTouches
