@@ -26,11 +26,11 @@ public struct SwiftEntryKitAttributes {
         return attributes
     }
     
-    static var modal: EKAttributes {
+    public static var modal: EKAttributes {
         return EKAttributes()
     }
     
-    static var notification: EKAttributes {
+    public static var notification: EKAttributes {
         return EKAttributes()
     }
     

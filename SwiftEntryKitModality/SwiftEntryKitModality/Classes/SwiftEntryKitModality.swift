@@ -29,11 +29,11 @@ open class SwiftEntryKitModalityView: UIView, ModalityContentProtocol {
         self.commonInit()
     }
     
-    public func commonInit() { }
+    open func commonInit() { }
     
     // MARK: - ModalityContentProtocol
     
-    public func willLoadModality(attributes: inout EKAttributes) { }
+    open func willLoadModality(attributes: inout EKAttributes) { }
     
     var _attributes: EKAttributes {
         get {
