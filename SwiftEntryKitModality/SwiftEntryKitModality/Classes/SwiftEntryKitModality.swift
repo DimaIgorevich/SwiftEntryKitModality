@@ -35,7 +35,7 @@ open class SwiftEntryKitModalityView: UIView, ModalityContentProtocol {
     
     open func willLoadModality(attributes: inout EKAttributes) { }
     
-    var _attributes: EKAttributes {
+    public var _attributes: EKAttributes {
         get {
             return modalityAttributes
         }
@@ -72,7 +72,7 @@ public protocol ModalityProtocol: class {
     
 }
 
-extension ModalityProtocol where Self: ModalityContentProtocol {
+public extension ModalityProtocol where Self: ModalityContentProtocol {
     
     func show(presentInsideKeyWindow: Bool = false,
               rollbackWindow: SwiftEntryKit.RollbackWindow = .main) {
@@ -93,7 +93,7 @@ extension ModalityProtocol where Self: ModalityContentProtocol {
 
 // MARK: - ModalityContentProtocol
 
-protocol ModalityContentProtocol: class {
+public protocol ModalityContentProtocol: class {
     
     // MARK: - Private
     
@@ -113,15 +113,15 @@ protocol ModalityContentProtocol: class {
 
 extension ModalityContentProtocol where Self: UIView {
     
-    var attributes: EKAttributes {
+    public var attributes: EKAttributes {
         return _attributes
     }
     
-    var modalView: UIView {
+    public var modalView: UIView {
         return self
     }
     
-    var identifier: String {
+    public var identifier: String {
         return self.className
     }
     
