@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "SwiftEntryKitModality"
-  s.version      = "0.1.6"
+  s.version      = "0.1.7"
   s.description  = "SwiftEntryKitModality framework help with modal view. Written in Swift."
   s.summary      = "SwiftEntryKitModality framework"
   s.platform     = :ios
