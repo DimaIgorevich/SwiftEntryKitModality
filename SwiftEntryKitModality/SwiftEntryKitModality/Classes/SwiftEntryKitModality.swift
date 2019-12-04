@@ -44,6 +44,10 @@ open class SwiftEntryKitModalityView: UIView, ModalityContentProtocol {
         }
     }
     
+    public var isUnique: Bool {
+        return true
+    }
+    
 }
 
 // MARK: - ModalityLifecycleEventProtocol
@@ -79,6 +83,10 @@ public extension ModalityProtocol where Self: ModalityContentProtocol {
         self.willLoadModality(attributes: &_attributes)
         self.prepareModal()
         
+        if isUnique {
+            if SwiftEntryKit.isCurrentlyDisplaying(entryNamed: self.identifier) { return }
+        }
+        
         SwiftEntryKit.display(entry: self.modalView,
                               using: self.attributes,
                               presentInsideKeyWindow: presentInsideKeyWindow,
@@ -100,6 +108,8 @@ public protocol ModalityContentProtocol: class {
     var _attributes: EKAttributes { set get }
     
     // MARK: - Public
+    
+    var isUnique: Bool { get }
     
     var identifier: String { get }
     
