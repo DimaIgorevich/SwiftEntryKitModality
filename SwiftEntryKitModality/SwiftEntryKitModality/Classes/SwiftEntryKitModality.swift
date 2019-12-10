@@ -35,6 +35,8 @@ open class SwiftEntryKitModalityView: UIView, ModalityContentProtocol {
     
     open func willLoadModality(attributes: inout EKAttributes) { }
     
+    open func willShow() { }
+    
     public var _attributes: EKAttributes {
         get {
             return modalityAttributes
@@ -44,7 +46,7 @@ open class SwiftEntryKitModalityView: UIView, ModalityContentProtocol {
         }
     }
     
-    public var isUnique: Bool {
+    open var canShow: Bool {
         return true
     }
     
@@ -83,14 +85,13 @@ public extension ModalityProtocol where Self: ModalityContentProtocol {
         self.willLoadModality(attributes: &_attributes)
         self.prepareModal()
         
-        if isUnique {
-            if SwiftEntryKit.isCurrentlyDisplaying(entryNamed: self.identifier) { return }
+        if canShow {
+            self.willShow()
+            SwiftEntryKit.display(entry: self.modalView,
+                                  using: self.attributes,
+                                  presentInsideKeyWindow: presentInsideKeyWindow,
+                                  rollbackWindow: rollbackWindow)
         }
-        
-        SwiftEntryKit.display(entry: self.modalView,
-                              using: self.attributes,
-                              presentInsideKeyWindow: presentInsideKeyWindow,
-                              rollbackWindow: rollbackWindow)
     }
     
     func dismiss() {
@@ -109,7 +110,7 @@ public protocol ModalityContentProtocol: class {
     
     // MARK: - Public
     
-    var isUnique: Bool { get }
+    var canShow: Bool { get }
     
     var identifier: String { get }
     
@@ -118,6 +119,8 @@ public protocol ModalityContentProtocol: class {
     var attributes: EKAttributes { get }
     
     func willLoadModality(attributes: inout EKAttributes)
+    
+    func willShow()
     
 }
 
