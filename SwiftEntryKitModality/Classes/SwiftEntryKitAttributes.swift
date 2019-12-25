@@ -18,7 +18,8 @@ public struct SwiftEntryKitAttributes {
         attributes.scroll                       = .disabled 
         attributes.entranceAnimation            = .none
         attributes.exitAnimation                = .none
-        attributes.screenBackground             = .color(color: UIColor(white: 50.0/255.0, alpha: 0.3))
+        attributes.screenBackground             = .color(color: EKColor.black.with(alpha: 0.3))
+//        attributes.screenBackground             = .color(color: UIColor(white: 50.0/255.0, alpha: 0.3))
         attributes.positionConstraints.size     = .init(width: .offset(value: 20),
                                                         height: .intrinsic)
         attributes.positionConstraints.maxSize  = .init(width: .constant(value: UIScreen.main.minEdge),
