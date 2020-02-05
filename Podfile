@@ -4,6 +4,6 @@
 target 'SwiftEntryKitModality' do
   use_frameworks!
   
-  pod 'SwiftEntryKit', '1.1.4'
+  pod 'SwiftEntryKit', '1.2.3'
 
 end

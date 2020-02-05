@@ -15,6 +15,6 @@ Pod::Spec.new do |s|
   s.source       = { :git => "https://github.com/DimaIgorevich/SwiftEntryKitModality.git", :tag => "#{s.version}" }
   s.source_files = 'SwiftEntryKitModality/**/*.swift'
   s.frameworks = 'UIKit'
-  s.dependency 'SwiftEntryKit', '1.1.4'
+  s.dependency 'SwiftEntryKit', '1.2.3'
 
 end
