@@ -19,7 +19,7 @@ open class SwiftEntryKitModalityView: UIView, ModalityContentProtocol {
     
     // MARK: - Lifecycle
     
-    override init(frame: CGRect) {
+    override public init(frame: CGRect) {
         super.init(frame: frame)
         self.commonInit()
     }
